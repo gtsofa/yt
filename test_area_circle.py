@@ -17,4 +17,10 @@ class TestareaCircle(unittest.TestCase):
         results = area_cirle.areaCirlce(10)
 
         # check for  expected output
+        expected = 314.1592653589793
         self.assertEqual(expected, results)
+
+
+# run the tests
+if __name__ == '__main__':
+    unittest.main()
