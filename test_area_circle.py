@@ -20,6 +20,12 @@ class TestareaCircle(unittest.TestCase):
         expected = 314.1592653589793
         self.assertEqual(expected, results)
 
+    def test_areaCirlce_for_2radius(self):
+        results = area_cirle.areaCirlce(2)
+        expected = 12.566370614359172
+
+        self.assertEqual(expected, results)
+
 
 # run the tests
 if __name__ == '__main__':
