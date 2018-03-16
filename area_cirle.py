@@ -7,3 +7,8 @@ def areaCirlce(radius):
     area = 3.141592653589793 * radius**2
 
     return area
+# test function here.
+area1 = areaCirlce(10)
+print(area1)
+area2 = areaCirlce(7)
+print(area2)
