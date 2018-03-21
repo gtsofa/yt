@@ -12,7 +12,7 @@ def areaCirlce(radius):
 # print(areaCirlce(7))
 # print(areaCirlce('g'))
 # test function here.
-area1 = areaCirlce(10)
-print(area1)
-area2 = areaCirlce(7)
-print(area2)
+# area1 = areaCirlce(10)
+# print(area1)
+# area2 = areaCirlce(7)
+# print(area2)
