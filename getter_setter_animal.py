@@ -34,4 +34,17 @@ animale = Animal(24)
 animale.set_name('Boris')
 print(animale)
 
+# Inherintance: subclass cat
+class Cat(Animal):
+    """Cat class inherits from animal."""
+    def speak(self):
+        """Return sound of Cat"""
+        print("meow!")
 
+    def __str__(self):
+        """Return the object of Cat """
+        return "cat:"+str(self.name)+":"+str(self.age)
+
+# test cat class
+gatto = Cat(5)
+print(gatto)
