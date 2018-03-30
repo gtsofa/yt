@@ -24,8 +24,9 @@ class Animal(object):
         """set animal name to newname"""
         self.name = newname
 
+    #w/o this mtd, this will be printed <__main__.Animal object at 0x7fb504f0c5d0>
     def __str__(self):
-        """Return name and age of the animal class"""
+        """Print object of type animal: Return name and age of the animal class"""
         return "animal:"+str(self.name)+":"+str(self.age)
 
 # test class
