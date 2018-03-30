@@ -52,3 +52,35 @@ gatto.set_name("helium")
 print(gatto)
 
 # Inherintance: subclass Person
+class Person(Animal):
+    """Person class"""
+    def __init__(self, name, age):
+        
+        """Initialize Person class"""
+        Animal.__init__(self, age)
+        self.set_name(name)
+        self.friends = []
+
+    def get_friends(self):
+        """Return friends """
+        return self.friends
+
+    def add_friends(self, fname):
+        """Adds friends """
+        if fname not in self.friends:
+            self.friends.append(fname)
+
+    def speak(self):
+        """Return sound of the person"""
+        print("hello")
+
+    def age_diff(self, other):
+        """Return age difference of a person"""
+        diff = self.age - other.age
+        print(abs(diff), "year difference")
+
+    def __str__(self):
+        """Return Cat data objects """
+        return "person:"+str(self.name)+":"+str(self.age)
+
+
