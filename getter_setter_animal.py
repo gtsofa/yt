@@ -1,5 +1,6 @@
 # getter_setter_animal.py
 
+print("# parentclass Animal")
 class Animal(object):
     """Animal model"""
 
@@ -35,6 +36,7 @@ animale.set_name('Boris')
 print(animale)
 
 # Inherintance: subclass Cat
+print("--subclass Cat--")
 class Cat(Animal):
     """Cat class inherits from animal."""
     def speak(self):
@@ -52,10 +54,10 @@ gatto.set_name("helium")
 print(gatto)
 
 # Inherintance: subclass Person
+print("--subclass Person--")
 class Person(Animal):
     """Person class"""
     def __init__(self, name, age):
-        
         """Initialize Person class"""
         Animal.__init__(self, age)
         self.set_name(name)
@@ -82,5 +84,9 @@ class Person(Animal):
     def __str__(self):
         """Return Cat data objects """
         return "person:"+str(self.name)+":"+str(self.age)
+
+# test subclass Person
+persone = Person("gtsofa", 23)
+print(persone)
 
 
