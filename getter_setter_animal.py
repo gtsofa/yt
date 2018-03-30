@@ -134,11 +134,27 @@ class Rabbit(Animal):
     """Rabbit class"""
     tag = 1
     def __init__(self, age, parent1=None, parent2=None):
+        """Initialize Rabbit class """
         Animal.__init__(self, age)
         self.parent1 = parent1
         self.parent2 = parent2
         self.rid = Rabbit.tag
         Rabbit.tag += 1
+
+    def get_rid(self):
+        """Return Rabbit ID rid"""
+        return str(self.rid).zfill(3) #pad the beggining with zeros
+
+    def get_parent1(self):
+        """Return parent 1"""
+        return self.parent1
+
+    def get_parent2(self):
+        """Return parent 2"""
+        return self.parent2
+
+        
+
 
 
 
