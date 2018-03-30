@@ -28,5 +28,8 @@ class Animal(object):
         """Return name and age of the animal class"""
         return "animal:"+str(self.name)+":"+str(self.age)
 
+# test class
+animale = Animal(24)
+print(animale)
 
 
