@@ -89,4 +89,9 @@ class Person(Animal):
 persone = Person("gtsofa", 23)
 print(persone)
 
+# Inheritance: subclass Student : inherit Person & Animal attributes.
+class Student(Person):
+    """Student class """
+
+
 
