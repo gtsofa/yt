@@ -104,6 +104,7 @@ class Student(Person):
 
     def speak(self):
         """sound of student"""
+        # random() will gives us random numbers on range of 0 & 1 excluding 1
         r = random.random()
         if r < 0.25:
             print("i have homework")
@@ -122,8 +123,22 @@ class Student(Person):
         return "student:"+str(self.name)+":"+str(self.age)+":"+str(self.major)
 
 # subclass student test
-studente = Student("Tsofa", 34, "Python")
+print("# student subclass")
+studente = Student("Tsofa", 34, "CS")
+studente2 = Student("Sarah", 33)
 print(studente)
+#print(studente2.get_name(),"says:",r)
+
+# Inherintance: subclass Rabbit: inherit Animal
+class Rabbit(Animal):
+    """Rabbit class"""
+    tag = 1
+    def __init__(self, age, parent1=None, parent2=None):
+        Animal.__init__(self, age)
+        self.parent1 = parent1
+        self.parent2 = parent2
+        self.rid = Rabbit.tag
+        Rabbit.tag += 1
 
 
 
