@@ -34,7 +34,7 @@ animale = Animal(24)
 animale.set_name('Boris')
 print(animale)
 
-# Inherintance: subclass cat
+# Inherintance: subclass Cat
 class Cat(Animal):
     """Cat class inherits from animal."""
     def speak(self):
@@ -48,3 +48,7 @@ class Cat(Animal):
 # test cat class
 gatto = Cat(5)
 print(gatto)
+gatto.set_name("helium")
+print(gatto)
+
+# Inherintance: subclass Person
