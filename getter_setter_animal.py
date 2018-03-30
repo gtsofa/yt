@@ -27,10 +27,11 @@ class Animal(object):
     #w/o this mtd, this will be printed <__main__.Animal object at 0x7fb504f0c5d0>
     def __str__(self):
         """Print object of type animal: Return name and age of the animal class"""
-        return "animal:"+str(self.name)+":"+str(self.age)
+        return "animal name is "+str(self.name)+" and age:"+str(self.age)
 
 # test class
 animale = Animal(24)
+animale.set_name('Boris')
 print(animale)
 
 
