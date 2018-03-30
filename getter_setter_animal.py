@@ -1,5 +1,6 @@
 # getter_setter_animal.py
 
+import random
 print("# parentclass Animal")
 class Animal(object):
     """Animal model"""
@@ -92,6 +93,37 @@ print(persone)
 # Inheritance: subclass Student : inherit Person & Animal attributes.
 class Student(Person):
     """Student class """
+    def __init__(self, name, age, major=None):
+        """Initialize student subclass"""
+        Person.__init__(self, name, age)
+        self.major = major
+
+    def change_major(self, major):
+        """set student major"""
+        self.major = major
+
+    def speak(self):
+        """sound of student"""
+        r = random.random()
+        if r < 0.25:
+            print("i have homework")
+
+        elif 0.25 <= r < 0.5:
+            print("i need sleep")
+
+        elif 0.5 <= r < 0.75:
+            print("i should eat")
+
+        else:
+            print("i am watching tv")
+
+    def __str__(self):
+        """Display Student data attributes."""
+        return "student:"+str(self.name)+":"+str(self.age)+":"+str(self.major)
+
+# subclass student test
+studente = Student("Tsofa", 34, "Python")
+print(studente)
 
 
 
