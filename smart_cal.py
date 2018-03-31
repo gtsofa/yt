@@ -5,7 +5,7 @@
 # Store the user input of the two numbers and the operator
 #num1, operator, num2 = input("Enter Calculation:")
 #num1, num2 = input("enter numbers:").split()
-num1, operator, num2 = raw_input("enter numbers:").split()
+num1, operator, num2 = raw_input("Enter two numbers and the other operate in between:").split()
 # Convert the strings into integers
 num1 = int(num1)
 num2 = int(num2)
