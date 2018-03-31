@@ -161,11 +161,11 @@ class Rabbit(Animal):
 
     def __add__(self, other):
         """Returning object of same type as this class"""
-        return Rabbit(0,self, other)
+        return Rabbit(0,self, other) # o-id, self-parent, other-otherparent
 
     def __str__(self):
         """Return rabbit object"""
-        return "rabbit:"+str(self.get_name())
+        return "rabbit:"+ str(self.get_name()+":"+ self.get_rid())
 
 # rabbit tests
 print("\n ----rabbits tests---")
