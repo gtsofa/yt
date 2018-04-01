@@ -169,6 +169,13 @@ class Rabbit(Animal):
 
     def __eq__(self, other):
         """Compare two rabbits if they have the same two parents"""
+        parent_same = self.parent1.rid == other.parent1.rid \
+                    and self.parent2.rid == other.parent2.rid
+
+        parents_opposite = self.parent2.rid == other.parent1.rid \
+                        and self.parent1.rid == other.parent2.rid
+
+        return parent_same or parents_opposite
 
 # rabbit tests
 print("\n ----rabbits tests---")
@@ -181,7 +188,18 @@ print("r2:", r2)
 print("r3:", r3)
 print("r1 parent 1:", r1.get_parent1())
 print("r2 parent 2:", r2.get_parent2())
+
 print("---testing rabbit equality---")
+r5 = r2+r3
+r6 = r3+r2
+print("r2:", r2)
+print("r3:", r3)
+print("r5", r5)
+print("r6", r6)
+print("r5 parent1:", r5.get_parent1())
+print("r5 parent2:", r5.get_parent2())
+print("r6 parent1:", r6.get_parent1())
+print("r6 parent2:", r6.get_parent2())
 
 
 
