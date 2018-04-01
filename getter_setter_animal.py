@@ -163,10 +163,6 @@ class Rabbit(Animal):
         """Returning object of same type as this class"""
         return Rabbit(0,self, other) # o-id, self-parent, other-otherparent
 
-    def __str__(self):
-        """Return rabbit object"""
-        return "rabbit:"+ str(self.get_name()+":"+ self.get_rid())
-
     def __eq__(self, other):
         """Compare two rabbits if they have the same two parents"""
         parent_same = self.parent1.rid == other.parent1.rid \
@@ -176,6 +172,13 @@ class Rabbit(Animal):
                         and self.parent1.rid == other.parent2.rid
 
         return parent_same or parents_opposite
+
+    def __str__(self):
+        """Return rabbit object"""
+        #return "rabbit:"+ str(self.get_name()+":"+ self.get_rid())
+        return "rabbit:"+ self.get_rid()
+
+    
 
 # rabbit tests
 print("\n ----rabbits tests---")
