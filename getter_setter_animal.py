@@ -167,6 +167,9 @@ class Rabbit(Animal):
         """Return rabbit object"""
         return "rabbit:"+ str(self.get_name()+":"+ self.get_rid())
 
+    def __eq__(self, other):
+        """Compare two rabbits if they have the same two parents"""
+
 # rabbit tests
 print("\n ----rabbits tests---")
 print("--testing creating rabbits---")
