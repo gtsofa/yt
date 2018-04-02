@@ -44,4 +44,19 @@ for <varibale> in range(<some number):
 --> first tiem, <varialbe> starts at the smallest value
 --> next time , <variable> gets the prev value + 1 
 --> etc
+--> range(start, stop, step)
+--> default values are start = 0 and step = 1 and optional
+--> loop until value is stop - 1
 '''
+# for loop examples
+# mysum = 0
+# for i in range(5, 7):
+#     mysum += i
+
+# print(mysum) # 11
+
+mysum = 0
+for i in range(5, 7):
+    mysum += i
+
+print(mysum)
