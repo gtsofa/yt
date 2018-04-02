@@ -56,7 +56,7 @@ for <varibale> in range(<some number):
 # print(mysum) # 11
 
 mysum = 0
-for i in range(5, 7):
+for i in range(5, 11, 2):
     mysum += i
 
-print(mysum)
+print(mysum) #21
