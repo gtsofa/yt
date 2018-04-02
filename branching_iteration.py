@@ -85,4 +85,12 @@ for <varibale> in range(<some number):
 --> know number of iterations           --> unbounded number of iterations
 --> uses a counter                      --> can use a counter but must initialize before loop
                                             and increment it inside the loop
+
 '''
+x = 1
+print(x)
+
+x_str = str(x)
+
+print("my fav number is", x, ".", "x =", x) # using , in print
+print("my fav number is " + x_str + ". " + "x = " + x_str) # using + in print
