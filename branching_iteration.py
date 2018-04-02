@@ -55,8 +55,15 @@ for <varibale> in range(<some number):
 
 # print(mysum) # 11
 
-mysum = 0
-for i in range(5, 11, 2):
-    mysum += i
+# mysum = 0
+# for i in range(5, 11, 2):
+#     mysum += i
 
-print(mysum) #21
+# print(mysum) #21
+
+'''
+  break statements
+--> immediately exits whatever loop it is in
+--> skips remaining expressions in code block
+--> exits only innermost loop!
+'''
