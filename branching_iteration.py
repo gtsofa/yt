@@ -47,6 +47,8 @@ for <varibale> in range(<some number):
 --> range(start, stop, step)
 --> default values are start = 0 and step = 1 and optional
 --> loop until value is stop - 1
+-->FYI: range() if u give it 1value, it's going to be for STOP, 2values will be STOP & START etc while
+--> the missing ones will de by default
 '''
 # for loop examples
 # mysum = 0
@@ -99,3 +101,4 @@ print("my fav number is " + x_str + ". " + "x = " + x_str) # using + in print
 '''
 --> , FYI - u can use mix object ie string and integers types BUT output will have spaces
 --> + FYI - u cannot mix object - u use string types only BUT output will be nice.
+'''
