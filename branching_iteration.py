@@ -67,3 +67,22 @@ for <varibale> in range(<some number):
 --> skips remaining expressions in code block
 --> exits only innermost loop!
 '''
+
+# break statement examples
+
+# mysum = 0
+# for i in range(5, 11, 2):
+#     mysum += i
+
+#     if mysum == 5:
+#         break
+#         mysum += 1
+
+# print(mysum)
+
+# for loops VS while loops
+'''
+--> know number of iterations           --> unbounded number of iterations
+--> uses a counter                      --> can use a counter but must initialize before loop
+                                            and increment it inside the loop
+'''
