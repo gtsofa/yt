@@ -94,3 +94,8 @@ x_str = str(x)
 
 print("my fav number is", x, ".", "x =", x) # using , in print
 print("my fav number is " + x_str + ". " + "x = " + x_str) # using + in print
+
+# when concancating : its your choice what to use but know these
+'''
+--> , FYI - u can use mix object ie string and integers types BUT output will have spaces
+--> + FYI - u cannot mix object - u use string types only BUT output will be nice.
