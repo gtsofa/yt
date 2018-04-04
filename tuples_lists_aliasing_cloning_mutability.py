@@ -53,17 +53,47 @@
 
 # some remainders to myself.
 # using indices of elements
-L = [2,3,5,7]
-total = 0
-for i in range(len(L)):
-    total += L[i]
-    #total.append(i)
-print total
+# L = [2,3,5,7]
+# total = 0
+# for i in range(len(L)):
+#     total += L[i]
+#     #total.append(i)
+# print total
 
-# now using elements directly!
-L = [2,3,5,7]
-total = 0
-for i in L:
-    total += i
+# # now using elements directly!
+# L = [2,3,5,7]
+# total = 0
+# for i in L:
+#     total += i
 
-print(total)
+# print(total)
+
+# avoid mutating a list
+def remove_dups(L1, L2):
+    """Remove duplicate elements in a list
+    """
+    for el in L1:
+        if el in L1:
+            L1.remove(el)
+
+
+# testing func
+L1 = [1,2,3,4]
+L2 = [1,2,5,6]
+remove_dups(L1, L2)
+
+# solution 2 that uses cloning
+def remove_dups(L1, L2):
+    """Remove duplicate elements in a list
+    """
+    #clone
+    L1.copy = L1[:] # clone list first
+    for el in L1:
+        if el in L1:
+            L1.remove(el)
+            
+
+# testing func
+L1 = [1,2,3,4]
+L2 = [1,2,5,6]
+remove_dups(L1, L2)
