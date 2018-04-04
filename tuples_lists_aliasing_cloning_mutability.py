@@ -39,3 +39,14 @@ def get_data(aTuple):
 test = ((1,"a"),(2,"b"),(1,"a"),(7,"b"))
 (a,b,c) = get_data(test)
 print("a:",a,"b:",b,"c:",c)
+
+# apply to any data that u want
+tswift = ((2014, "Katy"),
+          (2014, "Harry"),
+          (2012, "Jake"),
+          (2010, "Taylor"),
+          (2008, "Joe"))
+
+(min_year, max_year, num_people) = get_data(tswift)
+print("From", min_year, "to", max_year, \
+"Taylor swift wrote songs about", num_people, "people!")
