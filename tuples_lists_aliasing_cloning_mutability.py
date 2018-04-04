@@ -34,3 +34,8 @@ def get_data(aTuple):
     max_n = max(nums)
     unique_words = len(words)
     return (min_n, max_n, unique_words)
+
+# testing get_data()
+test = ((1,"a"),(2,"b"),(1,"a"),(7,"b"))
+(a,b,c) = get_data(test)
+print("a:",a,"b:",b,"c:",c)
