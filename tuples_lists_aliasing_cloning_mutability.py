@@ -22,31 +22,48 @@
 # manupulating tuples
 # can iterate over values
 
-def get_data(aTuple):
-    nums = ()
-    words = ()
-    for t in aTuple:
-        nums = nums + (t[0],) # (t[0],) implies a tuple with only 1 element!
-        if t[1] not in words:
-            words = words + (t[1],)
+# def get_data(aTuple):
+#     nums = ()
+#     words = ()
+#     for t in aTuple:
+#         nums = nums + (t[0],) # (t[0],) implies a tuple with only 1 element!
+#         if t[1] not in words:
+#             words = words + (t[1],)
 
-    min_n = min(nums)
-    max_n = max(nums)
-    unique_words = len(words)
-    return (min_n, max_n, unique_words)
+#     min_n = min(nums)
+#     max_n = max(nums)
+#     unique_words = len(words)
+#     return (min_n, max_n, unique_words)
 
-# testing get_data()
-test = ((1,"a"),(2,"b"),(1,"a"),(7,"b"))
-(a,b,c) = get_data(test)
-print("a:",a,"b:",b,"c:",c)
+# # testing get_data()
+# test = ((1,"a"),(2,"b"),(1,"a"),(7,"b"))
+# (a,b,c) = get_data(test)
+# print("a:",a,"b:",b,"c:",c)
 
-# apply to any data that u want
-tswift = ((2014, "Katy"),
-          (2014, "Harry"),
-          (2012, "Jake"),
-          (2010, "Taylor"),
-          (2008, "Joe"))
+# # apply to any data that u want
+# tswift = ((2014, "Katy"),
+#           (2014, "Harry"),
+#           (2012, "Jake"),
+#           (2010, "Taylor"),
+#           (2008, "Joe"))
 
-(min_year, max_year, num_people) = get_data(tswift)
-print("From", min_year, "to", max_year, \
-"Taylor swift wrote songs about", num_people, "people!")
+# (min_year, max_year, num_people) = get_data(tswift)
+# print("From", min_year, "to", max_year, \
+# "Taylor swift wrote songs about", num_people, "people!")
+
+# some remainders to myself.
+# using indices of elements
+L = [2,3,5,7]
+total = 0
+for i in range(len(L)):
+    total += L[i]
+    #total.append(i)
+print total
+
+# now using elements directly!
+L = [2,3,5,7]
+total = 0
+for i in L:
+    total += i
+
+print(total)
