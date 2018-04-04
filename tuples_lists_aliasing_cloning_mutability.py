@@ -1,5 +1,6 @@
 # tuples_listing_aliasing_cloning_mutability.py
 
+# FYI: using tuples to return more than 1 values in a func
 def quotient_and_remainder(x, y):
     """
     Returns the quotient and remainder 
