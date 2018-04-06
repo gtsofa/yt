@@ -1,12 +1,14 @@
 # recursion_dictionary.py
 
+# suppose i want to do integer multiplicate and all i have available is addition
+
 # multiplication - iterative soluntion
 # check a*b --> 'add a to itself b times'
 # capture state by
 """
 start = i
 stop at = 0
-condition: i < i-1
+condition: i < i-1 # each time it reduces by 1 iteratively until i get down to 0
 result = current value of computation
 """
 def mult_iter(a, b):
