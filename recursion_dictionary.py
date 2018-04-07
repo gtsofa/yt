@@ -42,12 +42,12 @@
 # print(fact(4))
 
 # multiplication - recursive solution
-def mult(a,b):
-    if b == 1:
-        return a
+# def mult(a,b):
+#     if b == 1:
+#         return a
 
-    else:
-        return a + mult(a, b-1)
+#     else:
+#         return a + mult(a, b-1)
 
-# test function
-print(mult(2,5))
+# # test function
+# print(mult(2,5))
