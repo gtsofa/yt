@@ -10,11 +10,13 @@
 # stop at = 0
 # condition: i < i-1 # each time it reduces by 1 iteratively until i get down to 0
 # result = current value of computation
+## BASE CASE:
+-->
 # """
 # def mult_iter(a, b):
 #     # returns a * b using iteration Eg 2*5 --> 2+2+2+2+2
 #     result = 0
-#     while b > 0:
+#     while b > 0: # condition until b == 0
 #         result += a # adds a to results in every iteration
 #         b -= 1 # step thro by going backward --> 5 then 4 then 3 then 2 then 1
 
@@ -28,13 +30,24 @@
 # A - when n == 1 --> this is the simplest bit i know/can deal with
 # when will it stop at --> n-1
 
-def fact(n):
-    """Return the factorial of a number."""
-    if n == 1:
-        return 1
+# def fact(n):
+#     """Return the factorial of a number."""
+#     if n == 1:
+#         return 1
+
+#     else:
+#         return n * fact(n-1)
+
+# # test the function
+# print(fact(4))
+
+# multiplication - recursive solution
+def mult(a,b):
+    if b == 1:
+        return a
 
     else:
-        return n * fact(n-1)
+        return a + mult(a, b-1)
 
-# test the function
-print(fact(4))
+# test function
+print(mult(2,5))
