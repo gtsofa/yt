@@ -35,3 +35,6 @@ def fact(n):
 
     else:
         return n * fact(n-1)
+
+# test the function
+print(fact(4))
