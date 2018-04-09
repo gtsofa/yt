@@ -32,7 +32,7 @@ switch(variable){
 }
  */
 
- var car = "ferrari";
+ var car = "ford"; // default case
 
  switch(car){
      case "ferrari" :
@@ -46,4 +46,7 @@ switch(variable){
     case "doge" :
         document.write("American machines cannot corner properly.");
         break;
+
+    default:
+        document.write("I don't know that car")
  }
