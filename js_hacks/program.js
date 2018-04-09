@@ -77,13 +77,23 @@ while(condition){
 */
 
 // Objects, properties, methods
+/*
 var x = "My name is Tsofa";
 x.length //objectName.propertyname
 x.toUpperCase() //objectname.method
+*/
 
 // referencing elements
+/*
 function change(){
     var para = document.getElementById('para');
     para.innerHTML = "That tickles";
+
+}
+*/
+function change(){
+    var image = document.getElementById('social');
+    image.src = "twitter.png"
+    
     
 }
