@@ -31,7 +31,7 @@ switch(variable){
         statements;
 }
  */
-
+/*
  var car = "ford"; // default case
 
  switch(car){
@@ -50,3 +50,10 @@ switch(variable){
     default:
         document.write("I don't know that car")
  }
+ */
+// LOOPS
+counter = 1;
+while (counter <= 10){
+    document.write("<p> This is paragraph"+counter+ "</p>");
+    counter++;
+}
