@@ -74,3 +74,16 @@ while(condition){
 /* for (start; stop; step){
     //statements
 }
+*/
+
+// Objects, properties, methods
+var x = "My name is Tsofa";
+x.length //objectName.propertyname
+x.toUpperCase() //objectname.method
+
+// referencing elements
+function change(){
+    var para = document.getElementById('para');
+    para.innerHTML = "That tickles";
+    
+}
