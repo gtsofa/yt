@@ -1,8 +1,8 @@
 // program.js
 
-document.write("Hello World!")
+//document.write("Hello World!")
 
-var age = 17;
+//var age = 17;
 
 // if statement
 /* if (condition){
@@ -11,6 +11,7 @@ var age = 17;
 else {
     //statements.
 } */
+/*
 if (age >= 18) {
     document.write("Go the registrar of person for your ID." + </br>);
 
@@ -19,3 +20,30 @@ if (age >= 18) {
 else{
     document.write("You're under 18")
 }
+*/
+//SWITCH stament
+/*
+switch(variable){
+    case 1 :
+        statements;
+
+    case 2 :
+        statements;
+}
+ */
+
+ var car = "ferrari";
+
+ switch(car){
+     case "ferrari" :
+        document.write("Italian stalion hey?")
+        break;
+
+    case "porsche" :
+        document.write("German precision, i like that!");
+        break;
+
+    case "doge" :
+        document.write("American machines cannot corner properly.");
+        break;
+ }
