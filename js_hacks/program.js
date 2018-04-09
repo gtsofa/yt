@@ -52,8 +52,25 @@ switch(variable){
  }
  */
 // LOOPS
-counter = 1;
+//while loop - checks condition first, if it's false it exits
+/*
+var counter = 1;
 while (counter <= 10){
     document.write("<p> This is paragraph"+counter+ "</p>");
     counter++;
+}
+*/
+//do while - if you want atleast you program to run atleast once
+/*
+var counter = 1;
+do{
+    //statements
+}
+while(condition){
+    //statements
+}
+*/
+//for loop - use it when u know how many times your loop needs to run 
+/* for (start; stop; step){
+    //statements
 }
