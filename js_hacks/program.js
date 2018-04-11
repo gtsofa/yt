@@ -91,17 +91,17 @@ function change(){
 
 }
 */
-var image_tracker = 't';
-function change(){
-    var image = document.getElementById('social');
-    if (image_tracker == 'f'){
-        image.src = 'twitter.png';
-        image_tracker = 't';
-    }
-    else{
-        image.src = 'facebook.png';
-        image_tracker = 'f'
-    }
+// var image_tracker = 't';
+// function change(){
+//     var image = document.getElementById('social');
+//     if (image_tracker == 'f'){
+//         image.src = 'twitter.png';
+//         image_tracker = 't';
+//     }
+//     else{
+//         image.src = 'facebook.png';
+//         image_tracker = 'f'
+//     }
     
     
-}
+// }
