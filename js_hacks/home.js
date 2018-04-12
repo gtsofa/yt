@@ -1,5 +1,5 @@
 // home.js
-
+<button>press mew</button>
 var button = document.querySelector('button');
 
 button.onclick = function(){
