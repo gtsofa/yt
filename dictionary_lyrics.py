@@ -18,3 +18,5 @@ she_loves_you = ['she', 'loves', 'you',
 'she', 'loves', 'you', 'yeah', 'yeah',
 'she', 'loves', 'you', 'yeah', 'yeah']
 print(lyrics_to_frequencies(she_loves_you))
+haily_marry = ['yeah', 'you are', 'appreciated', 'dear', 'mama']
+print(lyrics_to_frequencies(haily_marry))
