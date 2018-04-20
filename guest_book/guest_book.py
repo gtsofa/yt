@@ -11,7 +11,7 @@ def index():
 
 @app.route('/home')
 def home():
-    return render_template('example.html', myvar='I love jinja')
+    return render_template('example.html', myvarr='I love jinja')
 
 if __name__=='__main__':
     app.run(debug=True)
