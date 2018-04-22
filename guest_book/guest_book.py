@@ -20,9 +20,10 @@ class Comments(db.Model):
 # create a route - decorate and the action
 @app.route('/')
 def index():
+    result = Comments.query.all()
 
     #return '<h1>Hello There!</h1>'
-    return render_template('index.html')
+    return render_template('index.html', result=result)
 
 @app.route('/sign')
 def sign():
